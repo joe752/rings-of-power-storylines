@@ -2,7 +2,7 @@
    Rings of Power Storyline Explorer — data layer
    Plain global data, no build step (kept GitHub-Pages friendly).
    Timeline scale used for spoiler-gating everywhere:
-     S1E1..S1E5 = 1..5   S2E1..S2E5 = 6..10
+     S1E1..S1E8 = 1..8   S2E1..S2E8 = 9..16
 --------------------------------------------------------------- */
 
 window.EP_NAMES = {
@@ -15,7 +15,7 @@ window.RACES = {
   elf: { name: "Elves", summary: [{ revealAt: 1, text: "Immortal Firstborn of Middle-earth, weary after ages of war with Morgoth and now with Sauron; many long for the undying lands of Valinor." }] },
   men: { name: "Men", summary: [{ revealAt: 1, text: "Mortal and scattered — from the humble Southlanders to the proud, seafaring descendants of Númenor." }] },
   dwarf: { name: "Dwarves", summary: [{ revealAt: 1, text: "A private, hardy people carved into the mountain halls of Khazad-dûm, guarding their own discoveries jealously." }] },
-  harfoot: { name: "Harfoots", summary: [{ revealAt: 1, text: "A small nomadic folk who survive by staying hidden from the wider world, migrating with the seasons." }] },
+  harfoot: { name: "Harfoots", summary: [{ revealAt: 1, text: "A small nomadic folk who survive by staying hidden from the wider world, migrating with the seasons. They are part of the ancient Hobbit-kindreds from which the later peoples of the Shire and Bree descend." }], lore: "lore-harfoot-ancestry" },
   orc: { name: "Orcs", summary: [{ revealAt: 2, text: "Corrupted, sunlight-sensitive soldiers bred for war, organized in the Southlands toward an unknown purpose." }] },
   maia: { name: "Maiar", summary: [{ revealAt: 8, text: "Ancient spiritual beings older than the peoples of Middle-earth; Sauron is one of the Maiar, though his nature is hidden behind fairer forms." }] },
   istari: { name: "Istari", summary: [{ revealAt: 8, text: "Wizards sent in human-seeming shape to contest Sauron's growing power. By the end of Season 1, the Stranger is identified as one of them." }] }
