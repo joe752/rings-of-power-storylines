@@ -20,4 +20,41 @@
   ];
   harfoots.why = "The episode establishes the trait that drives Nori's choices: when caution tells her to turn away, curiosity and concern pull her closer. Finding the Stranger matters because Nori is the kind of person who chooses to look.";
   harfoots.blurb = "Nori looks beyond the safe path";
+
+  /* S1E1 works better as two Southlands sections: the human–Elf relationship is
+     the emotional groundwork, while the spreading corruption is a separate mystery. */
+  const southlands = SEASONS.s1.storylines.southlands.episodes[0];
+  southlands.summary = "Arondir and Bronwyn cross a boundary their communities do not trust.";
+  southlands.beats = [
+    { text: "For generations, Elven soldiers have watched the people of the Southlands because their ancestors sided with Morgoth. The war is ancient, but the distrust is not: many Southlanders resent being treated as if they inherited their ancestors' guilt, while many Elves still see them as a people who must be watched." },
+    { text: "Inside that divide, Arondir and Bronwyn have quietly fallen in love. Their affection has to remain largely unspoken and private—not only because an Elf and a mortal loving one another is extraordinary, but because neither community is inclined to welcome the other." , lore: "lore-elf-mortal-love" },
+    { text: "When the Elven watch is ordered home, Arondir does not simply leave with the others. He returns to Bronwyn, even though his own company will be looking for him. Their conversation makes clear that separation has become a personal choice neither of them is ready to accept." },
+    { text: "The relationship also changes how Arondir sees the people he has been assigned to watch. Bronwyn is not an abstraction or the descendant of an old enemy; through her, the Southlands have become a place of human lives and attachments that matter to him." }
+  ];
+  southlands.place = ["tirharad"];
+  southlands.people = ["arondir", "bronwyn"];
+  southlands.why = "The episode establishes the Southlands through a relationship caught inside inherited hostility. Arondir and Bronwyn's love is already pulling both of them across boundaries their communities have spent generations maintaining.";
+  southlands.blurb = "Love across an old divide";
+
+  SEASONS.s1.storylines["southlands-shadow"] = {
+    title: "The first signs of danger",
+    cast: ["arondir", "bronwyn", "theo"],
+    location: "Tirharad · Hordern",
+    art: "scene-southlands",
+    color: "oklch(72% 0.12 55)",
+    episodes: [
+      {
+        summary: "Something is wrong beneath the apparent peace.",
+        beats: [
+          { text: "Bronwyn brings Arondir to a sick cow whose milk has turned black after it wandered east near Hordern. The image is small and domestic, but it is the episode's clearest warning that corruption is already reaching ordinary life." },
+          { text: "Arondir and Bronwyn travel together to investigate Hordern and find the village burned and abandoned. The danger is still unexplained, but the discovery gives them a reason to act together just as the official Elven watch is ending." },
+          { text: "Elsewhere, Theo secretly takes a broken black sword bearing Sauron's mark from Waldreg's barn. The weapon is important, but at this point neither Theo nor the audience yet understands what it is or how deeply it is connected to the danger spreading through the Southlands." }
+        ],
+        place: ["tirharad"],
+        people: ["arondir", "bronwyn", "theo"],
+        why: "The black milk, the destruction of Hordern, and Theo's hidden sword turn the Southlands from a place of old political tension into the first place where a new threat is visibly taking root.",
+        blurb: "The first signs of corruption"
+      }, null, null, null, null, null, null, null
+    ]
+  };
 })();
