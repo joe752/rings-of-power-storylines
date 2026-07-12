@@ -1,6 +1,6 @@
 (() => {
 'use strict';
-const $=(s,r=document)=>r.querySelector(s); const state={episode:0,spoilerLimit:16,view:'episodes',browseQuery:'',browseFilter:'all'};
+const $=(s,r=document)=>r.querySelector(s); const state={episode:0,spoilerLimit:1,view:'episodes',browseQuery:'',browseFilter:'all'};
 const TYPE_MAPS={character:CHARACTERS,place:PLACES,object:OBJECTS,race:RACES};
 const FILTERS=[['all','All'],['character','Characters'],['place','Places'],['object','Objects'],['race','Races']];
 const clear=e=>{while(e.firstChild)e.removeChild(e.firstChild)};
@@ -13,7 +13,7 @@ function entityLabel(t,id){const e=TYPE_MAPS[t]?.[id];if(!e)return id;if(t==='ch
 function entityRole(t,id){const e=TYPE_MAPS[t]?.[id];if(!e)return '';if(t==='character'){const x=visibleIdentity(e);if(x?.role)return x.role}return e.role||''}
 function visibleEntityNames(t,id){const e=TYPE_MAPS[t]?.[id];if(!e)return[];const n=[];if(!e.nameRevealAt||e.nameRevealAt<=state.spoilerLimit)n.push(e.name);(e.aliases||[]).forEach(x=>n.push(x));if(t==='character')(e.identities||[]).filter(x=>x.revealAt<=state.spoilerLimit).forEach(x=>{n.push(x.name);(x.aliases||[]).forEach(a=>n.push(a))});return[...new Set(n.filter(Boolean))]}
 function episodeSections(i){const sid=i<8?'s1':'s2',local=i<8?i:i-8,season=SEASONS[sid];return Object.entries(season.storylines).map(([key,story])=>({key,story,episode:story.episodes[local]})).filter(x=>x.episode)}
-function loadState(){const p=new URLSearchParams(location.search),saved=+localStorage.getItem('rop-spoiler-limit'),q=+p.get('spoilers');state.spoilerLimit=q>=1&&q<=16?q:(saved>=1&&saved<=16?saved:16);state.view=p.get('view')==='browse'?'browse':'episodes';const ep=+p.get('episode');state.episode=ep>=1&&ep<=state.spoilerLimit?ep-1:Math.min(state.spoilerLimit-1,15)}
+function loadState(){const p=new URLSearchParams(location.search),saved=+localStorage.getItem('rop-spoiler-limit'),q=+p.get('spoilers');state.spoilerLimit=q>=1&&q<=16?q:(saved>=1&&saved<=16?saved:1);state.view=p.get('view')==='browse'?'browse':'episodes';const ep=+p.get('episode');state.episode=ep>=1&&ep<=state.spoilerLimit?ep-1:Math.min(state.spoilerLimit-1,15)}
 function updateUrl(push=false){const p=new URLSearchParams();p.set('episode',state.episode+1);p.set('spoilers',state.spoilerLimit);if(state.view==='browse')p.set('view','browse');history[push?'pushState':'replaceState'](null,'',`${location.pathname}?${p}`)}
 function buildDictionary(){const d=[];for(const[t,map]of Object.entries(TYPE_MAPS))for(const[id]of Object.entries(map)){if(!entityVisible(t,id))continue;visibleEntityNames(t,id).forEach(name=>d.push({name,id,type:t}))}return d.sort((a,b)=>b.name.length-a.name.length)}
 function boundaryOK(text,start,len){const before=start?text[start-1]:'',after=text[start+len]||'';const word=c=>/^[\p{L}\p{N}_]$/u.test(c);return !word(before)&&!word(after)}
