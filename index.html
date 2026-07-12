@@ -4,58 +4,33 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#171512">
-  <title>The Rings of Power — Storyline Explorer</title>
+  <title>The Rings of Power — Episode Companion</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <svg aria-hidden="true" class="symbol-bank">
-    <defs>
-      <symbol id="scene-galadriel" viewBox="0 0 180 96"><path d="M0 74Q45 52 90 74T180 74V96H0Z" fill="var(--story-color,#62aee8)" opacity=".22"/><circle cx="48" cy="30" r="12" fill="var(--story-color,#62aee8)"/><path d="M48 42L34 72H62Z" fill="var(--story-color,#62aee8)" opacity=".7"/><path d="M128 65V24M150 65V15M170 65V31M120 24H176" stroke="currentColor" stroke-width="4" opacity=".45"/></symbol>
-      <symbol id="scene-southlands" viewBox="0 0 180 96"><path d="M0 78L35 55L70 72L105 42L145 70L180 55V96H0Z" fill="var(--story-color,#db965a)" opacity=".22"/><circle cx="72" cy="31" r="11" fill="var(--story-color,#db965a)"/><path d="M72 42L57 74H87Z" fill="var(--story-color,#db965a)" opacity=".72"/><path d="M128 22L136 53L128 80L120 53Z" fill="currentColor" opacity=".55"/></symbol>
-      <symbol id="scene-elrond" viewBox="0 0 180 96"><path d="M0 80L42 32L68 62L103 20L142 63L180 38V96H0Z" fill="var(--story-color,#73bd87)" opacity=".2"/><circle cx="47" cy="34" r="12" fill="currentColor" opacity=".28"/><circle cx="140" cy="38" r="12" fill="var(--story-color,#73bd87)" opacity=".5"/><path d="M103 31L111 47L103 63L95 47Z" fill="var(--story-color,#73bd87)"/></symbol>
-      <symbol id="scene-harfoots" viewBox="0 0 180 96"><path d="M0 78Q45 54 90 78T180 78V96H0Z" fill="var(--story-color,#d77aaa)" opacity=".2"/><circle cx="55" cy="48" r="12" fill="var(--story-color,#d77aaa)" opacity=".5"/><circle cx="102" cy="34" r="12" fill="currentColor" opacity=".28"/><path d="M132 8L138 24L154 30L138 36L132 52L126 36L110 30L126 24Z" fill="var(--story-color,#d77aaa)"/></symbol>
-      <symbol id="scene-isildur" viewBox="0 0 180 96"><path d="M0 78Q35 58 70 78T140 78T210 78V96H0Z" fill="var(--story-color,#9b82dd)" opacity=".2"/><path d="M92 68H166L145 80H105Z" fill="var(--story-color,#9b82dd)" opacity=".6"/><path d="M128 66V18L157 52H128Z" fill="var(--story-color,#9b82dd)" opacity=".4"/><circle cx="47" cy="35" r="12" fill="currentColor" opacity=".28"/></symbol>
-    </defs>
-  </svg>
-
   <div class="app-shell">
     <main class="main-content">
       <header class="topbar">
-        <div>
-          <p class="eyebrow">Storyline Explorer</p>
-          <h1>The Rings of Power</h1>
-        </div>
+        <div><p class="eyebrow">Episode Companion</p><h1>The Rings of Power</h1></div>
         <button id="share-button" class="button secondary">Share</button>
       </header>
 
       <button id="settings-button" class="settings-summary button-card" type="button">
-        <span>
-          <span class="mini-label">Spoilers through</span>
-          <strong id="settings-summary"></strong>
-        </span>
+        <span><span class="mini-label">Spoilers through</span><strong id="settings-summary"></strong></span>
         <span class="muted">Change ⌄</span>
       </button>
 
-      <section id="explore-view" aria-label="Explore storylines">
-        <div id="story-picker" class="horizontal-rail"></div>
-        <div class="story-heading">
-          <div>
-            <h2 id="story-title"></h2>
-            <div id="cast-chips" class="link-row"></div>
-          </div>
-          <span id="story-location" class="badge"></span>
-        </div>
-        <div id="episode-grid" class="horizontal-rail episode-rail"></div>
-        <article id="detail-card" class="detail-card"></article>
+      <section id="episodes-view" aria-label="Episodes">
+        <div id="episode-grid" class="horizontal-rail episode-rail compact-episodes"></div>
+        <article id="episode-card" class="episode-page"></article>
       </section>
 
       <section id="browse-view" hidden aria-label="Browse story world">
         <div class="browse-header">
-          <p class="eyebrow">Quick reference</p>
-          <h2>Browse the story world</h2>
+          <p class="eyebrow">Quick reference</p><h2>Browse the story world</h2>
           <p class="muted">Search only what has been revealed up to your spoiler setting.</p>
           <input id="browse-search" type="search" placeholder="Search the story world…" autocomplete="off">
         </div>
@@ -65,30 +40,16 @@
     </main>
 
     <nav class="bottom-nav" aria-label="Primary">
-      <button id="explore-tab" class="nav-tab active" type="button">Explore</button>
+      <button id="episodes-tab" class="nav-tab active" type="button">Episodes</button>
       <button id="browse-tab" class="nav-tab" type="button">Browse</button>
     </nav>
   </div>
 
   <div id="modal-root"></div>
-
-  <script src="data/core.js"></script>
-  <script src="data/characters.js"></script>
-  <script src="data/lore.js"></script>
-  <script src="data/seasons-init.js"></script>
-  <script src="data/s1-galadriel.js"></script>
-  <script src="data/s1-southlands.js"></script>
-  <script src="data/s1-elrond.js"></script>
-  <script src="data/s1-harfoots.js"></script>
-  <script src="data/s1-isildur.js"></script>
-  <script src="data/s2-galadriel.js"></script>
-  <script src="data/s2-elrond.js"></script>
-  <script src="data/s2-numenor.js"></script>
-  <script src="data/s2-stranger.js"></script>
-  <script src="data/s2-southlands.js"></script>
-  <script src="data/rails.js"></script>
-  <script src="data/lore-expansion.js"></script>
+  <script src="data/core.js"></script><script src="data/characters.js"></script><script src="data/lore.js"></script><script src="data/seasons-init.js"></script>
+  <script src="data/s1-galadriel.js"></script><script src="data/s1-southlands.js"></script><script src="data/s1-elrond.js"></script><script src="data/s1-harfoots.js"></script><script src="data/s1-isildur.js"></script>
+  <script src="data/s2-galadriel.js"></script><script src="data/s2-elrond.js"></script><script src="data/s2-numenor.js"></script><script src="data/s2-stranger.js"></script><script src="data/s2-southlands.js"></script>
+  <script src="data/rails.js"></script><script src="data/lore-expansion.js"></script>
   <script src="app.js"></script>
-  <script src="link-boundary-fix.js"></script>
 </body>
 </html>
