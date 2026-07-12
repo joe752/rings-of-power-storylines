@@ -43,7 +43,11 @@ window.PLACES = {
 /* ---------------- OBJECTS ---------------- */
 window.OBJECTS = {
   "saurons-mark": { name: "Sauron's Mark", summary: [{ revealAt: 1, text: "A branded symbol found wherever Sauron's followers have passed — later decoded as a map of the Southlands." }] },
-  "black-sword": { name: "The Broken Sword", aliases: ["broken sword"], summary: [{ revealAt: 1, text: "A shattered blade bearing Sauron's mark, secretly kept by Waldreg and taken up by Theo." }, { revealAt: 5, text: "It is in fact a key tied to a mechanism created to transform the Southlands; its full purpose becomes clear in the battle for the region." }] },
+  "black-sword": { name: "The Broken Sword", aliases: ["broken sword"], summary: [
+    { revealAt: 1, text: "A shattered blade bearing Sauron's mark, secretly kept by Waldreg and taken up by Theo." },
+    { revealAt: 4, text: "The blade can reform when it draws blood, and both Waldreg and Adar's forces treat it as something important. Its true purpose is still unknown." },
+    { revealAt: 6, text: "The sword is revealed to be a key for the mechanism that opens the dam and sends water through the Orc tunnels toward Orodruin, triggering the eruption that transforms the Southlands." }
+  ] },
   palantir: { name: "The Palantír", aliases: ["palantír"], summary: [{ revealAt: 4, text: "A seeing-stone kept by Míriel's family, showing visions of Númenor's fate — including a wave that drowns the island." }], lore: "lore-palantir" },
   mithril: { name: "Mithril", summary: [{ revealAt: 4, text: "A newly discovered ore, lighter than silk and harder than iron, found deep beneath Khazad-dûm." }, { revealAt: 5, text: "Rumored to hold the light of a lost Silmaril, and perhaps the only thing that can slow the Elves' fading." }], lore: "lore-silmaril" },
   "three-rings": { name: "The Three Rings", summary: [{ revealAt: 8, text: "Rings of Power forged by Celebrimbor for the Elves, meant to preserve and heal without dominating." }], lore: "lore-rings-poem" },
