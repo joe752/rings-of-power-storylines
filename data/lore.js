@@ -1,0 +1,15 @@
+/* ---------------- LORE ---------------- */
+window.LORE = {
+  "lore-doom-of-mandos": { title: "The Doom of the Noldor", revealAt: 1, text: "In the First Age, the Noldor Elves were cursed for rebelling against the Valar to pursue Morgoth. Galadriel's choice to leap from the ship west is one last echo of that old exile." },
+  "lore-white-tree": { title: "The White Tree of Númenor", revealAt: 4, text: "The tree is a scion of Telperion, one of the Two Trees that once lit Valinor before Morgoth destroyed them — its falling petals have long been read as a sign from the Valar." },
+  "lore-silmaril": { title: "The Silmarils", revealAt: 4, text: "The Silmarils were jewels that once held the light of the Two Trees of Valinor. The show's mithril, said to hold that same light within Middle-earth's earth, is an invented link to that older legend." },
+  "lore-palantir": { title: "The Seeing-Stones", revealAt: 4, text: "The palantíri were Elven-made seeing-stones brought to Middle-earth by the exiled Númenóreans, capable of showing distant places and possible futures." },
+  "lore-mordor-name": { title: "The Land of Shadow", revealAt: 7, text: "Long after these events, the region Adar fights over will become known as Mordor — 'Black Land' — and Sauron's seat of power for the rest of the Second and Third Ages." },
+  "lore-rings-poem": { title: "Three Rings for the Elven-kings", revealAt: 12, text: "The Three Rings forged for the Elves in this season are the first lines of the poem that follows: three for Elves, seven for Dwarves, nine for Men — and one for the Dark Lord to rule them all." },
+  "lore-bombadil": { title: "Eldest", revealAt: 12, text: "In Tolkien's writings Tom Bombadil calls himself 'Eldest,' present in Middle-earth before its rivers and trees — his nature is left deliberately unexplained, even here." },
+  "lore-balrog": { title: "Durin's Bane", revealAt: 4, text: "The deeper the Dwarves dig for mithril, the closer they come to waking something ancient the book calls a Balrog — a reckoning still generations away in the show's timeline." },
+  "lore-numenor-fall": { title: "The Downfall of Númenor", revealAt: 13, text: "Founded as a reward to Men who fought Morgoth, Númenor's story ends in the book canon with its own drowning — a fate the palantír's wave hints at long before it happens." },
+  "lore-istari-order": { title: "The Order of Wizards", revealAt: 8, text: "The Istari were traditionally said to arrive in Middle-earth around a thousand years after these events — the show moves the Stranger's arrival much earlier." },
+  "lore-orc-origin": { title: "Orcs, once Elves", revealAt: 2, text: "Tolkien's older writings suggest Orcs were originally Elves corrupted by Morgoth — a lineage Adar's own nature as a former Elf directly evokes." },
+  "lore-finrod": { title: "Finrod Felagund", revealAt: 1, text: "Galadriel's brother Finrod was a King of the Noldor famed for his oath of friendship to Men, and for dying to save one — the vow Galadriel takes up herself." }
+};
