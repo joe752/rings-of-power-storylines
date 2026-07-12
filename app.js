@@ -1,7 +1,7 @@
 const names=["A Shadow of the Past","Adrift","Adar","The Great Wave","Partings"];
 const colors={galadriel:"var(--c1)",southlands:"var(--c2)",elrond:"var(--c3)",harfoots:"var(--c4)",isildur:"var(--c5)"};
 const root=document.getElementById("rop-storylines"),picker=document.getElementById("episode-picker");
-const spoilerSelect=document.getElementById("spoiler-limit"),storyView=document.getElementById("story-view"),browseView=document.getElementById("browse-view"),browseResults=document.getElementById("browse-results"),browseSearch=document.getElementById("browse-search"),shareButton=document.getElementById("share-button");
+const spoilerSelect=document.getElementById("spoiler-limit"),storyView=document.getElementById("explore-view"),browseView=document.getElementById("browse-view"),browseResults=document.getElementById("browse-results"),browseSearch=document.getElementById("browse-search"),shareButton=document.getElementById("share-button"),exploreTab=document.getElementById("explore-tab"),browseTab=document.getElementById("browse-tab");
 let currentStory="galadriel",currentEpisode=0,spoilerLimit=5,currentView="story";
 
 function firstAvailable(s,max=spoilerLimit){return s.episodes.findIndex((e,i)=>Boolean(e)&&i<max)}
@@ -15,11 +15,12 @@ function renderStory(){const s=STORIES[currentStory];root.style.setProperty("--s
 
 function visibleEvents(){const rows=[];Object.entries(STORIES).forEach(([key,s])=>s.episodes.forEach((e,i)=>{if(e&&i<spoilerLimit)rows.push({storyKey:key,story:s,episode:i,event:e})}));return rows}
 function renderBrowse(){const q=(browseSearch.value||"").trim().toLowerCase();const rows=visibleEvents().filter(r=>!q||[r.story.title,r.story.cast,r.story.location,r.event.summary,r.event.place,r.event.people,r.event.why,...r.event.beats].join(" ").toLowerCase().includes(q));if(!rows.length){browseResults.innerHTML='<div class="empty cardish">No matching storyline moments within your spoiler limit.</div>';return}const grouped={};rows.forEach(r=>{(grouped[r.storyKey]??=[]).push(r)});browseResults.innerHTML=Object.entries(grouped).map(([key,items])=>`<section class="browse-card" style="--story-color:${colors[key]}"><h3>${STORIES[key].title}</h3><div class="chip-row">${items.map(r=>`<button class="chip" data-story="${r.storyKey}" data-episode="${r.episode}"><strong>Episode ${r.episode+1}</strong><small>${r.event.blurb}</small></button>`).join("")}</div></section>`).join("");browseResults.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{currentStory=b.dataset.story;currentEpisode=+b.dataset.episode;setView("story");renderStory();updateUrl(false);window.scrollTo({top:0,behavior:"smooth"})})}
-function setView(view){currentView=view;const browse=view==="browse";storyView.hidden=browse;browseView.hidden=!browse;document.querySelectorAll(".tab").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.view===view)));if(browse)renderBrowse();updateUrl()}
+function setView(view){currentView=view;const browse=view==="browse";storyView.hidden=browse;browseView.hidden=!browse;exploreTab.setAttribute("aria-pressed",String(!browse));browseTab.setAttribute("aria-pressed",String(browse));if(browse)renderBrowse();updateUrl()}
 
 spoilerSelect.value=String(spoilerLimit);spoilerSelect.onchange=()=>{spoilerLimit=+spoilerSelect.value;localStorage.setItem("rop-spoiler-limit",String(spoilerLimit));if(currentEpisode>=spoilerLimit||!STORIES[currentStory].episodes[currentEpisode])currentEpisode=firstAvailable(STORIES[currentStory]);renderStory();renderBrowse();updateUrl()};
 document.querySelectorAll(".story-choice").forEach(b=>b.onclick=()=>{currentStory=b.dataset.story;currentEpisode=firstAvailable(STORIES[currentStory]);renderStory();updateUrl(false)});
-document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>setView(b.dataset.view));
+exploreTab.onclick=()=>setView("story");
+browseTab.onclick=()=>setView("browse");
 browseSearch.addEventListener("input",renderBrowse);
 shareButton.onclick=async()=>{updateUrl();const url=location.href;try{if(navigator.share)await navigator.share({title:"The Rings of Power Storyline Explorer",url});else{await navigator.clipboard.writeText(url);shareButton.textContent="Link copied";setTimeout(()=>shareButton.textContent="Share this view",1600)}}catch(e){if(e?.name!=="AbortError")prompt("Copy this link:",url)}};
 window.addEventListener("popstate",()=>{loadState();spoilerSelect.value=String(spoilerLimit);renderStory();setView(currentView)});
