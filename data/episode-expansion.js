@@ -163,11 +163,11 @@
         beats: [
           { text: "Waldreg persuades many of the refugees that survival means surrendering to the power gathering in the Southlands. Their choice is not presented as simple cowardice; fear and inherited loyalty make submission feel safer than resistance." },
           { text: "When Waldreg discovers that Adar is not Sauron, he submits anyway and is ordered to prove his loyalty through violence." },
-          { text: "Theo finally shows the broken sword to Arondir. Arondir recognizes that the weapon is not merely a relic but a key tied to the domination of the Southlands, making Theo's secret central to the threat around them." }
+          { text: "Theo finally shows the broken sword to Arondir. The marks around the old watchtower connect the weapon to the dark history of the Southlands, making Theo's secret central to the danger around them without yet revealing what the sword is actually for." }
         ],
         place: ["ostirith", "mordor-region"],
         people: ["theo", "waldreg", "adar", "arondir"],
-        why: "The Southlanders are divided by two competing responses to fear: resist an uncertain future, or submit to a power that promises survival. Theo's sword reveals that the conflict is also connected to an older plan for the land itself.",
+        why: "The Southlanders are divided by two competing responses to fear: resist an uncertain future, or submit to a power that promises survival. Theo's sword is clearly part of the threat, but its true purpose remains hidden.",
         blurb: "The community fractures"
       }, null, null, null
     ]
