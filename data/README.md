@@ -14,6 +14,20 @@ SEASONS.s2.episodes[0].sections
 
 An episode owns its sections. A section does not need to belong to a permanent storyline that continues through later episodes or seasons.
 
+Each episode object also owns its display metadata:
+
+```js
+{
+  seasonId: "s1",
+  seasonNumber: 1,
+  number: 3,
+  name: "Adar",
+  sections: []
+}
+```
+
+`EPISODE_TIMELINE` is the single ordered list of those same episode objects. The application uses it for spoiler positions, URL episode numbers, the episode rail, settings, and appearance links. This keeps assumptions such as “eight episodes per season” or “exactly two seasons” out of `app.js`.
+
 Each section contains the material needed to render that part of the episode:
 
 ```js
@@ -61,6 +75,21 @@ addEpisodeSections("s1", [
 
 Do not create a permanent storyline merely because the same character, place, relationship, or conflict appears more than once. Those connections are represented through entity IDs and can be queried independently of the episode-section structure.
 
+## Validation at the data boundary
+
+Sections are validated when they are registered so malformed content fails close to its source rather than surfacing later as a broken UI.
+
+The registration layer checks that:
+
+- `summary` and `why` contain text
+- `beats` is a non-empty array
+- every beat contains text
+- every `place` ID exists in `PLACES`
+- every `people` ID exists in `CHARACTERS`
+- every beat-level `lore` ID exists in `LORE`
+
+As new seasons are added, misspelled IDs and incomplete section objects should therefore be caught immediately when the source file loads.
+
 ## Canonical files
 
 ### Shared world data
@@ -68,7 +97,7 @@ Do not create a permanent storyline merely because the same character, place, re
 - `core.js` — episode names, peoples, places, and objects
 - `characters.js` — canonical character entities, staged identities, summaries, and relationships
 - `lore.js` — lore notes
-- `seasons-init.js` — initializes the episode-first season containers and registration helpers
+- `seasons-init.js` — initializes seasons, episode metadata, the ordered timeline, registration helpers, and section validation
 
 ### Season narrative data
 
@@ -89,6 +118,8 @@ source module
 addEpisodeSection / addEpisodeSections
     ↓
 SEASONS[season].episodes[episode].sections
+    ↓
+EPISODE_TIMELINE (same episode objects, ordered globally)
     ↓
 app.js
 ```
