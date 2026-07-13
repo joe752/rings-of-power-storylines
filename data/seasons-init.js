@@ -1,7 +1,5 @@
 /* Episode-first season model.
-   The UI and future content work with SEASONS[season].episodes[].sections directly.
-   Existing season files are accepted through a temporary legacy registry and are
-   compiled into the episode-first shape before app.js runs. */
+   All narrative content is stored directly on SEASONS[season].episodes[].sections. */
 (() => {
   const makeSeason = names => ({
     episodes: names.map((name, index) => ({ number: index + 1, name, sections: [] })),
@@ -13,9 +11,22 @@
     s2: makeSeason(EP_NAMES.s2)
   };
 
-  // Compatibility bridge for the current canonical season files while they are
-  // migrated from the old cross-episode series shape. This property is removed
-  // by finalizeEpisodeData() before the application starts.
+  window.addEpisodeSection = (seasonId, episodeNumber, section) => {
+    const season = window.SEASONS[seasonId];
+    const episode = season?.episodes?.[episodeNumber - 1];
+    if (!episode) throw new Error(`Unknown episode ${seasonId}E${episodeNumber}`);
+    episode.sections.push(section);
+  };
+
+  /* Convenience for source files that contribute at most one section per episode.
+     Null entries are skipped; the data is still written directly into each episode. */
+  window.addEpisodeSections = (seasonId, sectionsByEpisode) => {
+    sectionsByEpisode.forEach((section, index) => {
+      if (section) window.addEpisodeSection(seasonId, index + 1, section);
+    });
+  };
+
+  /* Temporary compatibility only while the remaining old source files are migrated. */
   for (const season of Object.values(window.SEASONS)) {
     Object.defineProperty(season, "storylines", {
       value: season._legacySeries,
@@ -24,20 +35,10 @@
     });
   }
 
-  window.addEpisodeSection = (seasonId, episodeNumber, section) => {
-    const season = window.SEASONS[seasonId];
-    const episode = season?.episodes?.[episodeNumber - 1];
-    if (!episode) throw new Error(`Unknown episode ${seasonId}E${episodeNumber}`);
-    episode.sections.push(section);
-  };
-
   window.finalizeEpisodeData = () => {
     for (const [seasonId, season] of Object.entries(window.SEASONS)) {
-      for (const [sourceId, series] of Object.entries(season._legacySeries || {})) {
-        (series.episodes || []).forEach((section, index) => {
-          if (!section) return;
-          window.addEpisodeSection(seasonId, index + 1, { sourceId, ...section });
-        });
+      for (const series of Object.values(season._legacySeries || {})) {
+        window.addEpisodeSections(seasonId, series.episodes || []);
       }
 
       delete season.storylines;
