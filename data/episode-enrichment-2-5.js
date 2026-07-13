@@ -124,9 +124,9 @@
     { text: "Bronwyn tries to organize a defense at Ostirith, but the refugees are hungry, frightened, and uncertain that resistance can succeed. Leadership now means asking people to risk their families on hope rather than proof." },
     { text: "Waldreg offers the opposite answer: survival through submission. Roughly half the group leaves with him, showing how easily old loyalties and present fear can become indistinguishable." },
     { text: "When Waldreg discovers that Adar is not Sauron, he submits anyway. Adar orders him to kill Rowan as proof, turning surrender from a promise of safety into participation in violence." },
-    { text: "Theo finally shows the broken sword to Arondir. Arondir identifies it as a key tied to the domination of the Southlands, revealing that Theo's private secret may be central to the enemy's plan." }
+    { text: "Theo finally shows the broken sword to Arondir. The marks around the old watchtower connect the weapon to the dark history of the Southlands, making Theo's secret central to the danger around them without yet revealing what the sword is actually for." }
   ];
-  s[4].why = "The coming battle is already reshaping the community. The episode asks what people will trade for safety, while Theo learns that hiding the sword has made him part of a danger much larger than himself.";
+  s[4].why = "The coming battle is already reshaping the community. The episode asks what people will trade for safety, while Theo learns that hiding the sword has made him part of a danger much larger than himself. The weapon is clearly important, but its true purpose remains hidden.";
 
   h[4].summary = "The Stranger protects the Harfoots, then frightens the person who trusted him first.";
   h[4].beats = [
