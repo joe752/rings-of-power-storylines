@@ -1,16 +1,17 @@
 window.SEASONS.s1.storylines.elrond = {
   title: "Elrond & Durin", cast: ["elrond", "durin-iv", "disa", "celebrimbor", "gil-galad"], location: "Lindon · Eregion · Khazad-dûm", art: "scene-elrond", color: "oklch(72% 0.12 155)",
   episodes: [
-    { summary: "Elrond is assigned to Celebrimbor's grand project.", beats: [
-        { text: "Elrond helps persuade Galadriel to accept passage to Valinor, believing her long war has finally ended." },
-        { text: "High King Gil-galad then introduces him to Celebrimbor, Eregion's celebrated Elven smith." },
-        { text: "Celebrimbor wants to build a tower containing an exceptionally powerful forge by spring. The deadline creates an immediate need for a workforce beyond what the Elves can supply." }
-      ], place: ["lindon"], people: ["elrond", "celebrimbor", "gil-galad"], why: "The planned forge begins the partnership that will require Dwarven labor—and eventually draw Elrond back to an old friend.", blurb: "A great forge is planned" },
-    { summary: "A political visit exposes a wounded friendship.", beats: [
-        { text: "Elrond brings Celebrimbor to Khazad-dûm hoping Prince Durin will supply the workers needed for the new forge, but the Dwarves initially bar his entrance." },
-        { text: "Elrond invokes a stone-breaking contest to gain an audience and loses. Durin explains that twenty years may feel brief to an Elf, but Elrond missed his wedding and the birth of his children." },
-        { text: "Disa helps the friends reconcile. Durin agrees to consider Elrond's proposal, while King Durin III suspects the visit may concern a secret discovery beneath the mountain." }
-      ], place: ["eregion", "khazad-dum"], people: ["elrond", "durin-iv", "disa", "celebrimbor"], why: "Durin resents Elrond's 20-year absence, but they reconcile. Durin agrees to hear the forge proposal while concealing a Dwarven discovery.", blurb: "Old friends reconcile" },
+    { summary: "Elrond balances friendship with the demands of power.", beats: [
+        { text: "Elrond welcomes Galadriel home as an old friend, but he also speaks from inside Gil-galad's political world. He urges her to accept the honor of returning to Valinor because he believes her war has ended and fears that continuing it will consume her." },
+        { text: "Their conversation establishes a tension that will follow Elrond throughout the story: he genuinely loves the people close to him, yet his position repeatedly asks him to carry the priorities of kings, realms, and larger causes into those friendships." },
+        { text: "After Galadriel departs, Gil-galad brings Elrond to Celebrimbor. The master smith wants an immense new forge completed by spring, giving Elrond a political assignment whose success will depend on relationships beyond the Elven court.", lore: "lore-rings-poem" }
+      ], place: ["lindon"], people: ["elrond", "galadriel", "gil-galad", "celebrimbor"], why: "Elrond is introduced as both a loyal friend and a rising political figure. The episode establishes the conflict between personal trust and public duty that will shape many of his most important relationships.", blurb: "Friendship meets public duty" },
+    { summary: "Twenty years means almost nothing to Elrond—and almost everything to Durin.", beats: [
+        { text: "Elrond brings Celebrimbor to Khazad-dûm expecting his old friendship with Prince Durin to open the way. Instead, the Dwarves bar him from entering and Durin receives him with anger rather than warmth." },
+        { text: "Elrond invokes the stone-breaking contest of sigin-tarâg to force an audience. The contest is playful on the surface, but it exposes how badly he has misread the friendship: Elrond believes he is returning to something preserved, while Durin has lived twenty full years without him." },
+        { text: "Durin tells Elrond that in those missing years he married Disa and became a father. Elrond's immortality has made him careless with mortal-scale time; what felt like a short absence to him contained the most important events of his friend's life." },
+        { text: "Disa refuses to let pride end the friendship. Her warmth makes room for Elrond to apologize honestly, and Durin finally agrees to hear the proposal that brought him there." }
+      ], place: ["eregion", "khazad-dum"], people: ["elrond", "durin-iv", "disa", "celebrimbor"], why: "The friendship becomes more interesting because it is not timeless and effortless. Elrond must learn that loving someone is not the same as being present for them, a lesson that will matter whenever politics asks him to use friendship as a bridge between peoples.", blurb: "Old friends reconcile" },
     null,
     { summary: "Elrond discovers the secret of mithril.", beats: [
         { text: "With Dwarven help, Celebrimbor's forge rises rapidly in Eregion. Celebrimbor suggests Durin is hiding something, so Elrond returns to investigate." },
