@@ -33,9 +33,10 @@ addEpisodeSections("s1", [
       { text: "Poppy and the Harfoots wait anxiously, unsure whether Nori will return safely from wherever the chase has led her." },
       { text: "The Stranger begins to sense his abilities are tied to a purpose far bigger than protecting one small community." }
     ], place: ["rhovanion"], people: ["stranger", "nori", "poppy"], why: "The Stranger's identity crisis comes to a head just as Nori's loyalty to him is tested hardest.", blurb: "A choice about who he is" },
-  { summary: "Nori leaves the Harfoots to travel east with the Stranger.", beats: [
-      { text: "After the Mystics are defeated, the Stranger understands that the constellation he has been seeking points toward Rhûn, where he may find answers about who he is and why he was sent to Middle-earth." },
-      { text: "Nori decides to go with him. She says goodbye to Poppy and to her family, choosing for the first time to leave the Harfoot migration rather than simply look beyond it." },
-      { text: "Nori and the Stranger set out for Rhûn together, turning their bond from one of rescue and protection into a shared journey toward the unknown." }
-    ], place: ["rhovanion", "rhun"], people: ["stranger", "nori", "poppy"], why: "The season ends with Nori choosing the wider world for herself. Her decision to accompany the Stranger creates the partnership that carries both of them into Season 2.", blurb: "Nori and the Stranger head east" }
+  { summary: "The Stranger is revealed as an Istar, and the season points strongly toward Gandalf.", beats: [
+      { text: "The Mystics mistake the Stranger for Sauron, but during the confrontation they realize he is not the Dark Lord at all: he is an Istar—a Wizard. Taking the Dweller's staff, he is able to focus his power, declares 'I am good,' and defeats them." },
+      { text: "Afterward, the Stranger understands that the constellation he has been seeking points toward Rhûn, where he may find answers about who he is and why he was sent to Middle-earth." },
+      { text: "As he and Nori choose their road east, he tells her, 'When in doubt, Elanor Brandyfoot, always follow your nose.' The line deliberately echoes Gandalf's advice in The Lord of the Rings and functions as the season's clearest clue to the Stranger's specific identity.", lore: "lore-follow-your-nose" },
+      { text: "Nori says goodbye to Poppy and her family, then leaves the Harfoot migration to travel with the Stranger toward Rhûn." }
+    ], place: ["rhovanion", "rhun"], people: ["stranger", "nori", "poppy"], why: "The season resolves the larger good-or-evil mystery by revealing that the Stranger is a Wizard rather than Sauron. It stops short of naming him Gandalf, but the repeated Gandalf line makes the intended association difficult to miss. Nori's decision to accompany him begins their shared journey into Season 2.", blurb: "An Istar heads east with Nori" }
 ]);
