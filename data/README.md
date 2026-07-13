@@ -1,10 +1,10 @@
 # Data architecture
 
-The companion uses plain JavaScript data files so it can remain static and GitHub Pages friendly. The important rule is that every piece of content has **one canonical home**, and the narrative model is **episode-first**.
+The companion uses plain JavaScript data files so it can remain static and GitHub Pages friendly. The important rules are that every piece of content has **one canonical home** and the narrative model is **episode-first**.
 
 ## Canonical runtime shape
 
-The application reads narrative content from:
+The application reads narrative content directly from:
 
 ```js
 SEASONS.s1.episodes[0].sections
@@ -27,11 +27,11 @@ Each section contains the material needed to render that part of the episode:
 }
 ```
 
-The application therefore does not search across storyline objects to reconstruct an episode. It reads the episode directly.
+The application does not search across storyline objects or compile a second model before rendering. It reads the selected episode directly.
 
 ## Adding narrative content
 
-New content should use the episode-first registration API:
+For a single section, use:
 
 ```js
 addEpisodeSection("s1", 3, {
@@ -47,15 +47,19 @@ addEpisodeSection("s1", 3, {
 
 The episode number is 1-based.
 
-Do not create a permanent cross-episode storyline merely because the same character, place, or conflict appears more than once. Repeated characters and relationships are represented through entity IDs and can be queried independently of the episode-section structure.
+A source module that contributes at most one section to each episode may use the convenience helper:
 
-## Existing Season 1 and Season 2 source files
+```js
+addEpisodeSections("s1", [
+  { /* Episode 1 section */ },
+  null,
+  { /* Episode 3 section */ }
+]);
+```
 
-The current season files predate the episode-first model and still declare their material in cross-episode series. `seasons-init.js` temporarily accepts those declarations through a non-enumerable compatibility registry. `finalize-episodes.js` compiles every non-null entry into the canonical `episodes[].sections` arrays and removes the old registry before `app.js` starts.
+`null` means that module contributes no section to that episode. The helper immediately writes each non-null section into the corresponding episode; it does not create or retain a cross-episode storyline object.
 
-This bridge exists only so the architecture can change without rewriting all story content in one risky operation. **Do not use the legacy series shape for new content.** Existing files should be migrated into direct `addEpisodeSection(...)` calls as they are next edited or reorganized.
-
-At runtime there is no `storylines` collection. The application depends only on the episode-first structure.
+Do not create a permanent storyline merely because the same character, place, relationship, or conflict appears more than once. Those connections are represented through entity IDs and can be queried independently of the episode-section structure.
 
 ## Canonical files
 
@@ -64,15 +68,32 @@ At runtime there is no `storylines` collection. The application depends only on 
 - `core.js` — episode names, peoples, places, and objects
 - `characters.js` — canonical character entities, staged identities, summaries, and relationships
 - `lore.js` — lore notes
-- `seasons-init.js` — initializes episode-first season containers and the registration API
-- `finalize-episodes.js` — removes the temporary compatibility registry before the app starts
+- `seasons-init.js` — initializes the episode-first season containers and registration helpers
 
 ### Season narrative data
 
-- `s1-*.js` — current Season 1 source files
-- `s2-*.js` — current Season 2 source files
+- `s1-*.js` — Season 1 section modules
+- `s2-*.js` — Season 2 section modules
 
-As these are migrated, organization by file is only for maintainability. The data model itself remains episode-first.
+The filenames are only a maintainability choice. A file may focus on a character, place, or cluster of related material, but the data it registers belongs to individual episodes.
+
+## No storyline registry
+
+There is no `storylines` collection, compatibility registry, compilation pass, or finalization step.
+
+The canonical path is always:
+
+```text
+source module
+    ↓
+addEpisodeSection / addEpisodeSections
+    ↓
+SEASONS[season].episodes[episode].sections
+    ↓
+app.js
+```
+
+That keeps the stored model identical to the model the UI reads.
 
 ## No override layers
 
@@ -100,10 +121,9 @@ Instead:
 
 1. shared world data
 2. episode-first season initialization
-3. Season 1 source files
-4. Season 2 source files
-5. episode finalization
-6. `app.js`
+3. Season 1 section modules
+4. Season 2 section modules
+5. `app.js`
 
 No content file should depend on a later file rewriting it.
 
