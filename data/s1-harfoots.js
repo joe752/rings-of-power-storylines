@@ -33,9 +33,9 @@ addEpisodeSections("s1", [
       { text: "Poppy and the Harfoots wait anxiously, unsure whether Nori will return safely from wherever the chase has led her." },
       { text: "The Stranger begins to sense his abilities are tied to a purpose far bigger than protecting one small community." }
     ], place: ["rhovanion"], people: ["stranger", "nori", "poppy"], why: "The Stranger's identity crisis comes to a head just as Nori's loyalty to him is tested hardest.", blurb: "A choice about who he is" },
-  { summary: "The Stranger leaves the Harfoots behind to find his true purpose.", beats: [
-      { text: "Having survived the Mystics' pursuit, the Stranger resolves to seek answers in the distant east rather than hide any longer." },
-      { text: "Nori insists on saying goodbye properly, changed by everything she has seen him become." },
-      { text: "He sets off toward Rhûn alone, the Harfoots' migration continuing on without the secret that has followed them all season." }
-    ], place: ["rhovanion", "rhun"], people: ["stranger", "nori", "poppy"], why: "The Stranger's decision to leave sets up his entire Season 2 journey toward Rhûn.", blurb: "Rhûn calls" }
+  { summary: "Nori leaves the Harfoots to travel east with the Stranger.", beats: [
+      { text: "After the Mystics are defeated, the Stranger understands that the constellation he has been seeking points toward Rhûn, where he may find answers about who he is and why he was sent to Middle-earth." },
+      { text: "Nori decides to go with him. She says goodbye to Poppy and to her family, choosing for the first time to leave the Harfoot migration rather than simply look beyond it." },
+      { text: "Nori and the Stranger set out for Rhûn together, turning their bond from one of rescue and protection into a shared journey toward the unknown." }
+    ], place: ["rhovanion", "rhun"], people: ["stranger", "nori", "poppy"], why: "The season ends with Nori choosing the wider world for herself. Her decision to accompany the Stranger creates the partnership that carries both of them into Season 2.", blurb: "Nori and the Stranger head east" }
 ]);
