@@ -2,16 +2,18 @@ window.SEASONS.s1.storylines.isildur = {
   title: "Isildur & Elendil", cast: ["isildur", "elendil", "earien", "kemen"], location: "Númenor and its fleet", art: "scene-isildur", color: "oklch(72% 0.12 295)",
   episodes: [
     null, null,
-    { summary: "Númenor's sea captain and restless son enter the story.", beats: [
-        { text: "Elendil, a Númenórean sea captain, rescues Galadriel and Halbrand and brings them to the island despite Númenor's hostility toward Elves." },
-        { text: "His son Isildur is close to completing naval training alongside his friends Valandil and Ontamo, but he hears a mysterious call pulling his attention westward." },
-        { text: "Isildur considers delaying graduation, frustrating Elendil. Their family is divided geographically and emotionally: brother Anárion is already in the west, while sister Eärien is beginning her own career." }
-      ], place: ["numenor"], people: ["elendil", "isildur", "earien"], why: "Elendil rescues Galadriel and Halbrand. Isildur nears graduation as a sea cadet but feels called toward a different path.", blurb: "The family is introduced" },
-    { summary: "Isildur's indecision costs his friends their places.", beats: [
-        { text: "Still distracted during a training exercise, Isildur deliberately makes a mistake that gets him dismissed from the Sea Guard." },
-        { text: "Because Valandil and Ontamo are serving on the same ship, his action also costs them their positions. They are furious that his uncertainty has damaged their futures." },
-        { text: "When Míriel calls for volunteers to accompany Galadriel to the Southlands, all three step forward, hoping the expedition offers a new path." }
-      ], place: ["numenor"], people: ["isildur", "elendil"], why: "His distraction gets all three cadets dismissed. They then volunteer for Míriel's expedition to the Southlands.", blurb: "Cadets are dismissed" },
+    { summary: "Isildur is close to the life everyone expects him to want—and cannot make himself want it.", beats: [
+        { text: "Isildur trains in Númenor's Sea Guard beside Valandil and Ontamo. He is close to graduating into a respected path, but his attention keeps drifting toward a call he cannot explain and a desire to go west." },
+        { text: "Elendil sees his son's uncertainty as another failure to commit. Their conflict is not simply rebellious son against strict father: Elendil wants Isildur to choose a life and stand inside it, while Isildur cannot yet explain what feels wrong about the one in front of him." },
+        { text: "The family is already geographically divided. Anárion is in the west, Eärien is beginning her own career, and Isildur's restlessness threatens to pull yet another child away from Elendil." },
+        { text: "At the same time, Elendil's decision to rescue Galadriel draws the family into a much larger conflict than any of them yet understand." }
+      ], place: ["numenor"], people: ["elendil", "isildur", "earien"], why: "Isildur enters the story as someone unable to settle into the future prepared for him. His uncertainty matters because it affects not only his own path but the people whose lives are tied to his choices.", blurb: "The family is introduced" },
+    { summary: "Isildur's uncertainty finally hurts the friends standing beside him.", beats: [
+        { text: "Still unable to commit to the Sea Guard, Isildur deliberately fails a training exercise so he can leave. The act is meant to free him from a path he does not want." },
+        { text: "Because Valandil and Ontamo serve on the same ship, Isildur's choice gets them dismissed too. His private crisis becomes a material loss for friends who did want the future he threw away." },
+        { text: "Their anger forces Isildur to confront a recurring weakness: he wants freedom from obligations without always seeing how much other people have invested in him." },
+        { text: "When Míriel later calls for volunteers to sail to Middle-earth, the expedition offers all three a possible new direction—but it does not erase what Isildur did." }
+      ], place: ["numenor"], people: ["isildur", "elendil"], why: "Isildur's restlessness stops being romantic the moment it costs other people something. The episode makes his search for purpose a problem he must grow through, not proof that he is automatically right to reject every path offered to him.", blurb: "Cadets are dismissed" },
     { summary: "Isildur forces his way onto the expedition.", beats: [
         { text: "Elendil rejects Isildur's request to join his ship, believing his son wants another easy escape from commitments he abandoned." },
         { text: "Isildur stows away on an expedition ship and catches Kemen trying to burn it. The explosion destroys two ships, but Isildur saves Kemen and prevents greater damage." },
