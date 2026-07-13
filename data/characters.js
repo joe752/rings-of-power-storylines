@@ -3,7 +3,7 @@ window.CHARACTERS = {
   finrod: { name: "Finrod", race: "elf", role: "Galadriel's brother (deceased)", storylines: ["s1:galadriel"],
     summary: [{ revealAt: 1, text: "A King of the Noldor who died fulfilling an oath of friendship to Men — the vow Galadriel takes up in his place." }], lore: "lore-finrod",
     relations: [{ id: "galadriel", label: "sister", revealAt: 1 }] },
-  galadriel: { name: "Galadriel", race: "elf", role: "Commander of the Northern Armies", storylines: ["s1:galadriel", "s2:galadriel"],
+  galadriel: { name: "Galadriel", race: "elf", role: "Commander of the Northern Armies", storylines: ["s1:galadriel", "s2:galadriel"], lore: "lore-galadriel-long-view",
     summary: [
       { revealAt: 1, text: "A relentless Elven commander who refuses to believe Sauron is truly gone, even after the rest of her people move on." },
       { revealAt: 5, text: "Leads a Númenórean expedition back to the Southlands, having convinced herself Halbrand is the region's rightful king." },
