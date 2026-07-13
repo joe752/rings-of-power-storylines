@@ -27,8 +27,8 @@ window.PLACES = {
   forodwaith: { name: "Forodwaith", region: "The far north", summary: [{ revealAt: 1, text: "A frozen wasteland where Sauron's mark is first rediscovered, long after the fall of Morgoth." }] },
   "sundering-sea": { name: "The Sundering Sea", region: "Between Middle-earth and Valinor", summary: [{ revealAt: 1, text: "The ocean that divides mortal lands from the undying West — and nearly claims Galadriel's life." }] },
   numenor: { name: "Númenor", region: "The island kingdom", summary: [{ revealAt: 1, text: "A proud island realm of Men gifted to the faithful after the First Age, increasingly divided over its friendship with Elves." }] },
-  eregion: { name: "Eregion", region: "Eriador", summary: [{ revealAt: 1, text: "An Elven realm of smiths and artisans, home to Celebrimbor's forge and, later, the Rings of Power." }] },
-  "khazad-dum": { name: "Khazad-dûm", region: "The Misty Mountains", summary: [{ revealAt: 1, text: "The greatest Dwarven city ever delved, its wealth built on a mysterious new ore found deep beneath the mountain." }] },
+  eregion: { name: "Eregion", region: "Eriador", summary: [{ revealAt: 1, text: "An Elven realm of smiths and artisans, home to Celebrimbor and the great forge he hopes to build." }, { revealAt: 8, text: "The realm where the first Rings of Power are forged." }] },
+  "khazad-dum": { name: "Khazad-dûm", region: "The Misty Mountains", summary: [{ revealAt: 2, text: "The greatest Dwarven city ever delved, a thriving mountain realm ruled by Durin III." }, { revealAt: 4, text: "Its people are guarding a remarkable new ore discovered deep beneath the mountain." }] },
   rhovanion: { name: "Rhovanion", region: "Wilderland", summary: [{ revealAt: 1, text: "The wide wilderness the Harfoots migrate through, season after season, staying always out of sight." }] },
   tirharad: { name: "Tirharad", region: "The Southlands", summary: [{ revealAt: 1, text: "A Southlands village of human descendants of those who once served Morgoth, watched over by Elven soldiers." }] },
   ostirith: { name: "Ostirith", region: "The Southlands", summary: [{ revealAt: 2, text: "An abandoned Elven watchtower that becomes a refuge for the Southlanders fleeing the Orcs." }] },
@@ -42,7 +42,7 @@ window.PLACES = {
 
 /* ---------------- OBJECTS ---------------- */
 window.OBJECTS = {
-  "saurons-mark": { name: "Sauron's Mark", summary: [{ revealAt: 1, text: "A branded symbol found wherever Sauron's followers have passed — later decoded as a map of the Southlands." }] },
+  "saurons-mark": { name: "Sauron's Mark", summary: [{ revealAt: 1, text: "A branded symbol found in the frozen fortress where Galadriel's company searches for traces of Sauron." }, { revealAt: 3, text: "Galadriel discovers that the symbol is also a map of the Southlands." }] },
   "black-sword": { name: "The Broken Sword", aliases: ["broken sword"], summary: [
     { revealAt: 1, text: "A shattered blade bearing Sauron's mark, secretly kept by Waldreg and taken up by Theo." },
     { revealAt: 4, text: "The blade can reform when it draws blood, and both Waldreg and Adar's forces treat it as something important. Its true purpose is still unknown." },
