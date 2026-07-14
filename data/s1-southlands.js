@@ -29,21 +29,18 @@ addEpisodeSections("s1", [
       { text: "When Waldreg discovers that Adar is not Sauron, he submits anyway. Adar orders him to kill Rowan as proof, turning surrender from a promise of safety into participation in violence." },
       { text: "Theo finally shows the broken sword to Arondir. The marks around the old watchtower connect the weapon to the dark history of the Southlands, making Theo's secret central to the danger around them without yet revealing what the sword is actually for." }
     ], place: ["ostirith"], people: ["bronwyn", "arondir", "theo", "waldreg", "adar"], why: "The coming battle is already reshaping the community. The episode asks what people will trade for safety, while Theo learns that hiding the sword has made him part of a danger much larger than himself. The weapon is clearly important, but its true purpose remains hidden.", blurb: "Resistance fractures" },
-  { summary: "A victory at Tirharad hides the mechanism that will create Mordor.", beats: [
-      { text: "Arondir abandons Ostirith and collapses the tower on part of Adar's army, then prepares the Southlanders to fight in Tirharad." },
-      { text: "Adar's forces overrun the village until the Númenórean cavalry arrives. Galadriel and Halbrand capture Adar, and Halbrand is hailed as king of the Southlands." },
-      { text: "The apparent victory is a diversion: Waldreg has the true sword-hilt and uses it to open the dam. Water races through the Orc tunnels into Orodruin, triggering the eruption." }
-    ], place: ["ostirith", "tirharad", "mordor-region"], people: ["arondir", "bronwyn", "theo", "adar", "waldreg", "galadriel", "sauron"], why: "The heroes win the battle but lose the land itself because Adar's real objective was the dam mechanism, not control of the village.", blurb: "The victory triggers the eruption" },
-  { summary: "Survivors reckon with a Southlands remade into ash.", beats: [
-      { text: "Arondir searches the ruined region for survivors, finding a transformed, blackened landscape where Tirharad once stood.", lore: "lore-mordor-name" },
-      { text: "Bronwyn tends the wounded among the refugees while Theo, shaken by what the sword made him do, avoids her." },
-      { text: "Adar surveys the wreckage of his own making, uncertain whether he has won anything at all." }
-    ], place: ["mordor-region"], people: ["arondir", "bronwyn", "theo", "adar"], why: "The Southlands are irrevocably changed, setting up the land's new identity for the rest of the story.", blurb: "Mordor is named" },
-  { summary: "The Southlanders begin to rebuild what little is left.", beats: [
-      { text: "With Adar's Orcs withdrawn to claim the ruined land as their own, the surviving Southlanders are relocated by the Númenóreans." },
-      { text: "Arondir chooses to stay near Bronwyn and Theo rather than return to Lindon with his own people." },
-      { text: "Waldreg's fate among the Orcs is left uncertain as the season closes on an uneasy quiet." }
-    ], place: ["mordor-region", "pelargir"], people: ["arondir", "bronwyn", "theo"], why: "The survivors' choices here set up where each of them will be found when Season 2 begins.", blurb: "A fragile peace" }
+  { summary: "The Southlanders win the battle, but Adar has already hidden the true objective.", beats: [
+      { text: "Arondir abandons Ostirith and collapses the tower on part of Adar's army, then prepares the Southlanders to make their stand in Tirharad." },
+      { text: "The defenders survive an initial attack only to discover that many of the fallen enemies are human followers of Adar disguised as Orcs. The real Orc assault follows, and Bronwyn is badly wounded." },
+      { text: "Theo gives Adar the wrapped sword-hilt to save Bronwyn and the remaining captives. The Númenórean cavalry then arrives, breaks the attack and captures Adar, creating the appearance that the danger has passed." },
+      { text: "The bundle recovered from Adar contains an ordinary axe. Waldreg has the true sword-hilt and uses it at the old watchtower, opening the dam so water races through the Orc tunnels into Orodruin and triggers the eruption." }
+    ], place: ["ostirith", "tirharad", "mordor-region"], people: ["arondir", "bronwyn", "theo", "adar", "waldreg", "galadriel", "sauron"], why: "The heroes win the visible battle but lose the larger struggle because Adar has separated the sword-hilt from himself before his capture. The reveal turns the tunnels, the dam and the weapon into one plan only after it is too late to stop it.", blurb: "Victory hides the real plan" },
+  { summary: "The survivors escape a homeland that has become Mordor.", beats: [
+      { text: "Galadriel and Theo make their way through the ash while the surviving Southlanders and Númenóreans regroup at their camp." },
+      { text: "Míriel has been blinded, Ontamo is dead and Isildur is missing. The surviving Southlanders agree to move to the old Númenórean colony of Pelargir rather than remain in the ruined land." },
+      { text: "Adar and the Orcs claim the transformed Southlands as their home. When Waldreg asks what the land should now be called, the episode reveals its new name: Mordor.", lore: "lore-mordor-name" }
+    ], place: ["mordor-region", "pelargir"], people: ["arondir", "bronwyn", "theo", "adar", "galadriel"], why: "The consequences are now irreversible. The people who lived in the Southlands become refugees, while Adar's children gain the sunless homeland the entire hidden plan was built to create.", blurb: "The Southlands become Mordor" },
+  null
 ]);
 
 addEpisodeSections("s1", [
