@@ -16,7 +16,7 @@ window.RACES = {
   men: { name: "Men", summary: [{ revealAt: 1, text: "Mortal and scattered — from the humble Southlanders to the proud, seafaring descendants of Númenor." }] },
   dwarf: { name: "Dwarves", summary: [{ revealAt: 1, text: "A private, hardy people carved into the mountain halls of Khazad-dûm, guarding their own discoveries jealously." }] },
   harfoot: { name: "Harfoots", summary: [{ revealAt: 1, text: "A small nomadic folk who survive by staying hidden from the wider world, migrating with the seasons. They are part of the ancient Hobbit-kindreds from which the later peoples of the Shire and Bree descend." }], lore: "lore-harfoot-ancestry" },
-  orc: { name: "Orcs", summary: [{ revealAt: 2, text: "Corrupted, sunlight-sensitive soldiers bred for war, organized in the Southlands toward an unknown purpose." }] },
+  orc: { name: "Orcs", summary: [{ revealAt: 2, text: "A sunlight-sensitive people shaped by ancient darkness and long used in war. In the Southlands, they are organized under Adar toward a purpose the audience does not yet understand." }] },
   maia: { name: "Maiar", summary: [{ revealAt: 8, text: "Ancient spiritual beings older than the peoples of Middle-earth; Sauron is one of the Maiar, though his nature is hidden behind fairer forms." }] },
   istari: { name: "Istari", summary: [{ revealAt: 8, text: "Wizards sent in human-seeming shape to contest Sauron's growing power. By the end of Season 1, the Stranger is identified as one of them." }] }
 };
@@ -26,18 +26,18 @@ window.PLACES = {
   lindon: { name: "Lindon", region: "Eriador", summary: [{ revealAt: 1, text: "Seat of the High King of the Elves, and the last grey haven before the ships sail west." }] },
   forodwaith: { name: "Forodwaith", region: "The far north", summary: [{ revealAt: 1, text: "A frozen wasteland where Sauron's mark is first rediscovered, long after the fall of Morgoth." }] },
   "sundering-sea": { name: "The Sundering Sea", region: "Between Middle-earth and Valinor", summary: [{ revealAt: 1, text: "The ocean that divides mortal lands from the undying West — and nearly claims Galadriel's life." }] },
-  numenor: { name: "Númenor", region: "The island kingdom", summary: [{ revealAt: 1, text: "A proud island realm of Men gifted to the faithful after the First Age, increasingly divided over its friendship with Elves." }] },
+  numenor: { name: "Númenor", region: "The island kingdom", summary: [{ revealAt: 3, text: "A proud island realm of Men gifted to the faithful after the First Age, increasingly divided over its friendship with Elves." }] },
   eregion: { name: "Eregion", region: "Eriador", summary: [{ revealAt: 1, text: "An Elven realm of smiths and artisans, home to Celebrimbor and the great forge he hopes to build." }, { revealAt: 8, text: "The realm where the first Rings of Power are forged." }] },
   "khazad-dum": { name: "Khazad-dûm", region: "The Misty Mountains", summary: [{ revealAt: 2, text: "The greatest Dwarven city ever delved, a thriving mountain realm ruled by Durin III." }, { revealAt: 4, text: "Its people are guarding a remarkable new ore discovered deep beneath the mountain." }] },
   rhovanion: { name: "Rhovanion", region: "Wilderland", summary: [{ revealAt: 1, text: "The wide wilderness the Harfoots migrate through, season after season, staying always out of sight." }] },
   tirharad: { name: "Tirharad", region: "The Southlands", summary: [{ revealAt: 1, text: "A Southlands village of human descendants of those who once served Morgoth, watched over by Elven soldiers." }] },
   ostirith: { name: "Ostirith", region: "The Southlands", summary: [{ revealAt: 2, text: "An abandoned Elven watchtower that becomes a refuge for the Southlanders fleeing the Orcs." }] },
-  "mordor-region": { name: "The Southlands", aliases: ["Southlands"], region: "South of the Anduin", summary: [{ revealAt: 3, text: "The lands Adar seeks to claim and remake as a home for his Orcs." }], lore: "lore-mordor-name" },
-  pelargir: { name: "Pelargir", region: "The Southlands coast", summary: [{ revealAt: 11, text: "A Númenórean settlement on the coast, and a gathering point for Men displaced by the war in the Southlands." }] },
-  rhun: { name: "Rhûn", region: "The far east", summary: [{ revealAt: 11, text: "Distant eastern lands the Stranger is drawn toward, following a pull he doesn't yet understand." }] },
+  "mordor-region": { name: "The Southlands", region: "South of the Anduin", summary: [{ revealAt: 1, text: "The lands where Tirharad and Ostirith stand, and where Adar's Orcs are carrying out an unknown plan." }, { revealAt: 7, text: "The eruption has transformed the Southlands into the land now named Mordor." }], lore: "lore-mordor-name" },
+  pelargir: { name: "Pelargir", region: "The Southlands coast", summary: [{ revealAt: 7, text: "An old Númenórean colony where the surviving Southlanders plan to seek refuge after the eruption." }] },
+  rhun: { name: "Rhûn", region: "The far east", summary: [{ revealAt: 8, text: "Distant eastern lands the Stranger is drawn toward after the constellation is identified as a guide to his next journey." }] },
   mithlond: { name: "Grey Havens", aliases: ["Mithlond"], region: "Lindon", summary: [{ revealAt: 9, text: "The harbour of Círdan the Shipwright, where Elrond brings the Three Rings when he wants them destroyed rather than risk Sauron's influence." }] },
   "barrow-downs": { name: "Barrow-downs", region: "Eriador", summary: [{ revealAt: 12, text: "Ancient burial mounds on the road to Eregion, haunted by barrow-wights that attack Elrond and Galadriel's company." }] },
-  "stoor-canyon": { name: "Stoor Canyon", region: "Rhûn", summary: [{ revealAt: 12, text: "A hidden desert settlement of Stoors whose traditions connect them to the wandering Harfoots." }] },
+  "stoor-canyon": { name: "Stoor Canyon", region: "Rhûn", summary: [{ revealAt: 12, text: "A hidden desert settlement of Stoors whose traditions connect them to the wandering Harfoots." }] }
 };
 
 /* ---------------- OBJECTS ---------------- */
@@ -58,5 +58,5 @@ window.OBJECTS = {
   "doors-of-durin": { name: "The Doors of Durin", summary: [{ revealAt: 13, text: "A new western entrance to Khazad-dûm created through the friendship and craft of Celebrimbor and Narvi." }] },
   nenya: { name: "Nenya", summary: [{ revealAt: 9, text: "Galadriel's Ring of Power, one of the Three Elven Rings." }] },
   narya: { name: "Narya", summary: [{ revealAt: 9, text: "The red Ring of Power worn by Círdan, one of the Three Elven Rings." }] },
-  vilya: { name: "Vilya", summary: [{ revealAt: 9, text: "The blue Ring of Power worn by Gil-galad, one of the Three Elven Rings." }] },
+  vilya: { name: "Vilya", summary: [{ revealAt: 9, text: "The blue Ring of Power worn by Gil-galad, one of the Three Elven Rings." }] }
 };
