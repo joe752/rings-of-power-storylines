@@ -33,11 +33,12 @@ addEpisodeSections("s1", [
       { text: "Galadriel interrogates Adar and learns that he claims to have killed Sauron's former physical form while trying to free the Orcs from him." },
       { text: "While the victors celebrate Halbrand as king, Waldreg uses the sword-hilt to open the dam and trigger Orodruin's eruption." }
     ], place: ["tirharad", "mordor-region"], people: ["galadriel", "sauron", "adar", "waldreg"], why: "Galadriel wins the battle she came to fight but fails to see the larger plan that transforms the Southlands into Mordor.", blurb: "Victory turns to fire" },
-  { summary: "Galadriel escapes the ash and takes a wounded Halbrand north.", beats: [
+  { summary: "Galadriel escapes the ash and reveals a loss she has carried for centuries.", beats: [
       { text: "Separated in the eruption, Galadriel finds Theo and leads him through the burning Southlands toward the Númenórean camp." },
+      { text: "As they travel, Theo speaks about loss and Galadriel reveals that she once had a husband, Celeborn, who went to war and never returned. She has long believed him dead." },
       { text: "At the camp she reunites Theo with Bronwyn and Arondir and learns that Halbrand has been badly wounded." },
       { text: "Galadriel decides Halbrand needs Elven medicine and rides with him toward Eregion, while the remaining Southlanders prepare to relocate to Pelargir." }
-    ], place: ["mordor-region", "pelargir", "eregion"], people: ["galadriel", "theo", "sauron", "arondir", "bronwyn"], why: "The catastrophe sends Galadriel and Halbrand to Eregion together—the move that puts Sauron inside Celebrimbor's forge.", blurb: "The road to Eregion" },
+    ], place: ["mordor-region", "pelargir", "eregion"], people: ["galadriel", "theo", "sauron", "arondir", "bronwyn"], why: "The catastrophe exposes a part of Galadriel's personal history the season had kept hidden and sends her with Halbrand to Eregion—the move that puts Sauron inside Celebrimbor's forge.", blurb: "The road to Eregion" },
   { summary: "Galadriel discovers that the man she crowned is Sauron.", beats: [
       { text: "Halbrand rapidly recovers in Eregion and gives Celebrimbor crucial ideas about combining mithril with other metals." },
       { text: "Galadriel investigates the Southlands royal line and discovers there has been no living king for generations. Halbrand then reveals that he is Sauron." },
