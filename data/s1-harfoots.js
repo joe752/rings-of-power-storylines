@@ -23,16 +23,13 @@ addEpisodeSections("s1", [
       { text: "He uses cold and ice to heal himself. Nori approaches and is briefly caught in the effect, leaving her frightened of someone she has chosen to protect." },
       { text: "Elsewhere, three mysterious women examine the Stranger's meteor crater. The episode confirms that Nori is not the only person interested in what fell from the sky, but does not yet explain who they are or what they want." }
     ], place: ["rhovanion"], people: ["nori", "poppy", "stranger"], why: "Nori's compassion is tested by fear rather than rewarded with certainty. The Stranger can save lives and still be dangerous, and caring about him does not require pretending otherwise.", blurb: "Magic turns dangerous" },
-  { summary: "The three mysterious travelers finally catch up to the Stranger.", beats: [
-      { text: "Nori and the Stranger press on ahead of the Harfoot migration, aware that something is searching for him." },
-      { text: "The three cloaked figures who found his crater back in the season's opening episode finally track him down." },
-      { text: "The Stranger uses his growing power to protect Nori, frightening even himself with how much strength he now commands." }
-    ], place: ["rhovanion"], people: ["stranger", "nori"], why: "The mysterious searchers from the season's start finally arrive, forcing a confrontation Nori can't referee alone.", blurb: "The Mystics close in" },
-  { summary: "The Stranger must decide whether to trust what the Mystics tell him.", beats: [
-      { text: "The Mystics offer the Stranger an explanation for his power, though not one he is ready to accept." },
-      { text: "Poppy and the Harfoots wait anxiously, unsure whether Nori will return safely from wherever the chase has led her." },
-      { text: "The Stranger begins to sense his abilities are tied to a purpose far bigger than protecting one small community." }
-    ], place: ["rhovanion"], people: ["stranger", "nori", "poppy"], why: "The Stranger's identity crisis comes to a head just as Nori's loyalty to him is tested hardest.", blurb: "A choice about who he is" },
+  null,
+  { summary: "The Stranger restores the Grove, and the Mystics force the Harfoots to choose whether to follow him.", beats: [
+      { text: "The Harfoots reach the Grove and find its trees ruined after the eruption of Orodruin. They ask the Stranger to help, but his first attempt at healing a tree sends a branch crashing down near Nori and Dilly, renewing the fear that his power may be too dangerous to trust." },
+      { text: "The Harfoots send the Stranger away. By the next morning, however, the Grove has burst back into life, showing that his power can restore as well as destroy even when he does not yet fully understand it." },
+      { text: "The Mystics arrive searching for the Stranger. Nori tries to misdirect them, and they retaliate by burning the Harfoots' wagons before continuing after him." },
+      { text: "Rather than remain hidden after the attack, Nori chooses to warn the Stranger. Poppy, Sadoc, and Marigold go with her, turning the Harfoots from passive victims of the wider world into people willing to step into it for someone they care about." }
+    ], place: ["rhovanion"], people: ["stranger", "nori", "poppy", "sadoc"], why: "The episode reverses the Harfoots' usual survival logic. The Stranger leaves because they fear his power, but his restoration of the Grove and the Mystics' attack convince Nori and others that hiding is no longer enough. Their decision to follow him directly sets up the finale.", blurb: "The Harfoots go after the Stranger" },
   { summary: "The Stranger is revealed as an Istar, and the season points strongly toward Gandalf.", beats: [
       { text: "The Mystics mistake the Stranger for Sauron, but during the confrontation they realize he is not the Dark Lord at all: he is an Istar—a Wizard. Taking the Dweller's staff, he is able to focus his power, declares 'I am good,' and defeats them." },
       { text: "Afterward, the Stranger understands that the constellation he has been seeking points toward Rhûn, where he may find answers about who he is and why he was sent to Middle-earth." },
