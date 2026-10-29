@@ -1,9 +1,10 @@
 addEpisodeSections("s2", [
   { summary: "Sauron returns to the Orcs as the man Adar believes he can use.", beats: [
-      { text: "Sauron's history with Adar is revealed: Adar and the Orcs once turned on him and destroyed his physical form, but Sauron endured." },
-      { text: "Back in Mordor as Halbrand, Sauron lets Adar torture him and then offers information that Sauron has returned." },
-      { text: "Adar begins raising an army to hunt Sauron, while Glûg and other Orcs worry about the cost of another war." }
-    ], place: ["mordor-region"], people: ["sauron", "adar", "glug", "waldreg"], why: "Sauron manipulates Adar's hatred into creating the army and battlefield he needs around Eregion.", blurb: "Sauron points Adar toward war" },
+      { text: "Sauron's history with Adar is revealed: after Morgoth's defeat, Sauron tries to take command of the Orcs, but Adar turns on him and the Orcs destroy his physical form. Sauron survives by slowly rebuilding a body of his own." },
+      { text: "Back in Mordor as Halbrand, Sauron gives himself up to Adar and claims the Dark Lord has returned elsewhere. He endures Waldreg's torture until Adar agrees to release him in exchange for information that can lead the Orcs to Sauron." },
+      { text: "After leaving the camp, Sauron uses the warg he had influenced in captivity to kill Waldreg. He then rides to Eregion and appears at Celebrimbor's gates still wearing Halbrand's face." },
+      { text: "Adar begins preparing to hunt Sauron, while Sauron has already turned that hatred into the first step of a plan that will draw the Orc army toward Eregion." }
+    ], place: ["mordor-region", "eregion"], people: ["sauron", "adar", "glug", "waldreg", "celebrimbor"], why: "The premiere shows both ends of Sauron's manipulation at once: he makes Adar believe the Dark Lord is somewhere else, then goes directly back to the Elven forge where his next deception can begin.", blurb: "Sauron points Adar toward war" },
   null,
   { summary: "Isildur survives, while Pelargir mourns Bronwyn.", beats: [
       { text: "Berek returns to Mordor and finds Isildur trapped in a nest of giant spiders. Isildur escapes and begins trying to find a way home." },
