@@ -28,6 +28,6 @@ addEpisodeSections("s2", [
       { text: "The Dark Wizard brings down the canyon around the Stoors. The Stranger uses his power to hold back the falling rock long enough for Nori, Poppy and many of the Stoors to escape." },
       { text: "The Stoors decide their ruined home cannot simply be rebuilt and begin their first migration. Nori and Poppy choose to travel with them, and Nori and the Stranger part as friends whose paths now have to separate." },
       { text: "As the Stoors say goodbye, some call the Stranger a 'Grand-Elf.' Afterward he finds a staff-shaped branch in the wreckage, as though the staff has found him rather than the other way around." },
-      { text: "Returning to Bombadil's house, the Stranger understands the lesson: choosing his friends over power led him to both the staff and the name he was seeking. He accepts that he will be called Gandalf." }
+      { text: "Returning to Bombadil's house, the Stranger understands the lesson: choosing his friends over power led him to both the staff and the name he was seeking. He accepts that he will be called Gandalf.", lore: "lore-gandalf-second-age" }
     ], place: ["stoor-canyon", "rhun"], people: ["stranger", "nori", "poppy", "dark-wizard", "bombadil", "gundabel"], why: "The identity mystery resolves through character rather than genealogy. The Stranger becomes Gandalf only after repeatedly choosing pity, friendship and protection over the easier promise of power.", blurb: "Gandalf finds his name" }
 ]);
