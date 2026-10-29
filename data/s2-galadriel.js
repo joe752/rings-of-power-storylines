@@ -35,3 +35,41 @@ addEpisodeSections("s2", [
       { text: "Sauron wounds Galadriel with Morgoth's crown and demands Nenya. She refuses him and falls backward from the cliff rather than surrender the ring. Elrond and Gil-galad later use the Elven Rings to help heal her." }
     ], place: ["eregion"], people: ["galadriel", "sauron", "celebrimbor", "elrond", "gil-galad"], why: "Eregion is lost and Sauron obtains the Nine Rings for Men, but Galadriel keeps Nenya from him and finally faces the person who deceived her without any illusion about who he is.", blurb: "The city falls, the fight continues" }
 ]);
+
+addEpisodeSection("s2", 2, {
+  summary: "Halbrand becomes Annatar inside Celebrimbor's forge.",
+  beats: [
+    { text: "Halbrand remains outside Eregion's gates, knowing Celebrimbor promised Galadriel he would not treat with him again. Celebrimbor waits for messengers from Lindon, unaware they were killed before they could deliver the warning that Halbrand is Sauron." },
+    { text: "When Celebrimbor finally comes out to dismiss him, Halbrand exploits the smith's pride and desire to continue the work of the Rings. He claims he is not a mortal man at all but an emissary sent to guide Celebrimbor's craft." },
+    { text: "Before Celebrimbor's eyes, Sauron takes a fair new form and names himself Annatar, the Lord of Gifts. Celebrimbor accepts the deception and invites him into the work of forging Rings for Dwarves and Men." }
+  ],
+  place: ["eregion"], people: ["sauron", "celebrimbor"],
+  why: "This is the season's central new deception. Celebrimbor rejects Halbrand but welcomes the same person once Sauron presents the identity that speaks directly to his ambition and sense of divine purpose.",
+  blurb: "Annatar enters Eregion"
+});
+
+addEpisodeSection("s2", 5, {
+  summary: "Annatar turns Celebrimbor's doubts into permission to forge the Nine.",
+  beats: [
+    { text: "Annatar urges Celebrimbor to make Rings for Men. Celebrimbor initially refuses, disturbed by how quickly Durin III's Ring is magnifying the Dwarf-king's greed." },
+    { text: "When Mirdania is pulled into the Unseen World while testing a ring, she sees a terrifying form nearby. Annatar convinces her that the figure she saw was Celebrimbor rather than himself, deepening the smiths' concern that their master is becoming unstable." },
+    { text: "Durin IV arrives with evidence that his father's Ring is changing him. Annatar turns the warning back on Celebrimbor, arguing that flaws entered the Seven because Celebrimbor had deceived Gil-galad about continuing the Ring-making." },
+    { text: "Celebrimbor accepts the blame and commits the forge to making nine Rings for mortal Men, while Annatar's manipulation isolates him further from the people who might challenge the deception." }
+  ],
+  place: ["eregion"], people: ["sauron", "celebrimbor", "mirdania", "durin-iv"],
+  why: "Sauron does not simply order the Nine into existence. He makes Celebrimbor interpret every warning sign as evidence of his own failure, turning guilt and pride into the engine that keeps the forge working.",
+  blurb: "The Nine are begun"
+});
+
+addEpisodeSection("s2", 7, {
+  summary: "Celebrimbor breaks through Sauron's illusion and sees Eregion burning.",
+  beats: [
+    { text: "While the siege rages outside, Celebrimbor continues forging the Nine inside a false version of Eregion where the city appears peaceful and time seems to repeat itself." },
+    { text: "Small inconsistencies finally expose the illusion. Celebrimbor confronts Annatar, the false world falls away, and he discovers both the real siege and that the material used in the Nine was Sauron's own blood rather than mithril." },
+    { text: "Celebrimbor tries to expose Sauron, but Annatar has already convinced the smiths and soldiers that their lord has lost his mind. Sauron kills Mirdania while making it appear that Celebrimbor caused her fall, tightening the trap around him." },
+    { text: "Celebrimbor eventually escapes with the Nine. Galadriel persuades his guards that he has been telling the truth, and he entrusts the Rings to her before turning back to delay Sauron." }
+  ],
+  place: ["eregion"], people: ["celebrimbor", "sauron", "mirdania", "galadriel"],
+  why: "Celebrimbor finally understands the full deception, but recognition comes after Sauron has isolated him socially, psychologically and physically. His last meaningful victory is getting the Nine out of Sauron's immediate reach.",
+  blurb: "The illusion breaks"
+});
