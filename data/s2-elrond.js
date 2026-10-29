@@ -11,9 +11,9 @@ addEpisodeSections("s2", [
     ], place: ["khazad-dum", "lindon"], people: ["elrond", "durin-iv", "durin-iii", "disa"], why: "The mountain's crisis makes the Dwarves vulnerable to the solution Sauron is preparing to offer through the rings.", blurb: "The mountain goes dark" },
   { summary: "The plan for the Seven reaches Khazad-dûm.", beats: [
       { text: "Celebrimbor and Annatar invite Durin IV and Disa to Eregion and propose Rings of Power for the Dwarves." },
-      { text: "Durin IV distrusts Annatar, but King Durin III accepts the proposal and agrees to supply mithril for the new rings." },
-      { text: "The partnership between Celebrimbor and the Dwarven craftsman Narvi deepens as Eregion and Khazad-dûm become more closely linked." }
-    ], place: ["eregion", "khazad-dum"], people: ["durin-iv", "disa", "durin-iii", "celebrimbor", "narvi", "sauron"], why: "The Dwarves accept the path that will put one of Sauron's corrupted rings on their king's hand.", blurb: "The Seven are proposed" },
+      { text: "Durin IV distrusts Annatar, but the crisis in Khazad-dûm pushes him to reconcile with his father and bring King Durin III the proposal." },
+      { text: "King Durin accepts the bargain and supplies mithril. The episode ends as Celebrimbor and Annatar begin forging the Seven, with Annatar insisting on placing the mithril into the forge himself." }
+    ], place: ["eregion", "khazad-dum"], people: ["durin-iv", "disa", "durin-iii", "celebrimbor", "sauron"], why: "The Dwarves accept a solution Durin IV does not trust because their kingdom is in crisis, opening the way for Sauron's influence to enter Khazad-dûm through the Seven.", blurb: "The Seven are forged" },
   { summary: "Elrond's road to Eregion becomes a battle of trust.", beats: [
       { text: "Elrond leads Galadriel's company toward Eregion after a destroyed bridge forces them onto a more dangerous route." },
       { text: "He rejects Galadriel's warning from Nenya, convinced that trusting the ring risks trusting Sauron." },
@@ -30,13 +30,13 @@ addEpisodeSections("s2", [
       { text: "Meanwhile the siege of Eregion begins, forcing Durin IV toward a choice between helping Elrond and stopping his father from waking the evil below." }
     ], place: ["khazad-dum", "eregion"], people: ["durin-iv", "durin-iii", "disa", "sauron", "elrond"], why: "The same ring that saved Khazad-dûm now threatens to drive its king into the darkness under the mountain.", blurb: "The mine must be stopped" },
   { summary: "Elrond asks Durin for an army—and cannot get one in time.", beats: [
-      { text: "Elrond reaches Khazad-dûm and asks Durin IV to send Dwarven forces to relieve Eregion." },
-      { text: "Durin III attacks Disa and Narvi in his attempt to continue the mining. Durin IV chooses to stop his father before the deeper evil is awakened." },
-      { text: "Elrond returns to the battle without the reinforcements he expected, while Eregion's defenses collapse." }
-    ], place: ["khazad-dum", "eregion"], people: ["elrond", "durin-iv", "durin-iii", "disa", "narvi"], why: "Durin's choice is tragic rather than disloyal: saving Eregion and saving Khazad-dûm have become mutually urgent.", blurb: "The army does not come" },
+      { text: "Durin IV and Disa block the deeper mine. When Durin III orders the miners to remove them, Narvi and the other Dwarves instead lay down their tools and stand with the prince." },
+      { text: "Elrond reaches Khazad-dûm and asks Durin IV to send Dwarven forces to relieve Eregion. Durin rallies the army and promises to march to his friend's aid." },
+      { text: "Before the army can leave, Narvi reports that Durin III has turned his axe on his own people and is forcing his way back toward the deep mine. Durin IV stays to stop his father, leaving Elrond to return to Eregion without the reinforcements he expected." }
+    ], place: ["khazad-dum", "eregion"], people: ["elrond", "durin-iv", "durin-iii", "disa", "narvi"], why: "Durin does not simply refuse Elrond. He is ready to send the army until his father's ring-driven violence threatens Khazad-dûm itself, forcing him to choose which disaster he can still prevent.", blurb: "The army does not come" },
   { summary: "Durin III pays the final price for digging too deep.", beats: [
-      { text: "Durin IV confronts his father as Durin III opens a vast mithril deposit beneath Khazad-dûm." },
-      { text: "The awakened Balrog attacks. Durin III gives his Ring to his son, names him king and sacrifices himself fighting the creature as the cavern collapses." },
-      { text: "Dwarven forces later help the surviving Elves escape Eregion, but Durin IV inherits a kingdom fractured by grief, succession and the rings." }
-    ], place: ["khazad-dum", "eregion"], people: ["durin-iv", "durin-iii", "disa", "elrond"], why: "The Dwarven Ring brings both restoration and catastrophe, leaving Durin IV to inherit the consequences.", blurb: "Shadow and flame beneath the mountain" }
+      { text: "Durin IV confronts his father as Durin III breaks into a vast mithril deposit beneath Khazad-dûm." },
+      { text: "The awakened Balrog attacks. Durin III finally removes his Ring, comes back to himself, recognizes his son as 'King Durin,' and sacrifices himself fighting the creature as the cavern collapses." },
+      { text: "Dwarven forces later help the surviving Elves escape Eregion, but Durin IV is left facing his father's death and a disputed succession rather than an uncontested throne." }
+    ], place: ["khazad-dum", "eregion"], people: ["durin-iv", "durin-iii", "disa", "elrond"], why: "The Dwarven Ring brings both restoration and catastrophe. Durin III dies resisting the evil his obsession awakened, while Durin IV inherits the consequences rather than a simple victory.", blurb: "Shadow and flame beneath the mountain" }
 ]);
